@@ -8,5 +8,257 @@ Some rules and guidelines:
 	avoid making classes for one rule
 	avoid using pixels for font-sizes except on body
 	don't abuse less nesting
-
 */
+
+/********************
+Mixins for fun times.
+********************/
+@serif: 'Fanwood', 'Times New Roman', serif;
+@sans: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+
+@yellow: #f9ac4a;
+@pink: #d91752;
+@green: #a2b57c;
+@warm: #ebe5da;
+
+
+/************************
+General site-wide styling
+*************************/
+body {
+	font-family: @serif;
+	font-size: 12px;
+	color: #fff;
+}
+
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.section {
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+}
+
+.inner_wrap {
+	height: auto;
+	width: 85%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/******************************************
+**************   Hercules   ***************
+******************************************/
+#one {
+	background-image: url('../img/homehero.jpg');
+	background-position: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.inner_wrap {
+		height: 450px;
+	}
+}
+
+
+/*******
+Top Nav
+*******/
+.nav {
+	width: 100%;
+	height: 150px;
+}
+
+.brand {
+	float: left;
+	margin-top: 0;
+	img {
+	width: 340px;
+	height: auto;
+}
+}
+
+nav.top {
+	float: right;
+	ul {
+		padding-top: 26px;
+	}
+	li {
+		float: left;
+		list-style: none;
+		text-transform: uppercase;
+		font-family: @sans;
+		color: #fff;
+		font-weight: 300;
+		font-size: 1.3em;
+		padding: 10px;
+		transition: all ease-in .2s;
+	}
+	li:hover {
+		background-color: #000;
+	}
+}
+
+
+.hero_content {
+	width: 100%;
+}
+
+
+h1.callout {
+	font-family: @sans;
+	font-weight: 300;
+	font-size: 3.2em;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 0;
+	padding-top: 20px;
+	width: 48%;
+}
+
+p.followup {
+	float: left;
+	font-family: @serif;
+	font-weight: 300;
+	font-size: 1.4em;
+	width: 48%;
+	margin-left: 2%;
+}
+
+/*******
+Border
+*******/
+.border {
+	width: 100%;
+	height: 20px;
+	background-color: #000;
+	opacity: 0.6;
+	margin-top:-20px;
+}
+
+
+/******************************************
+****************Section 2******************
+******************************************/
+#two {
+	background-color: #000;
+	height: 500px;
+	.inner_wrap {
+		width: 80%;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+}
+
+.fiftyfloat {
+	width: 48%;
+	float: left;
+	margin-left: 2%;
+	h3 {
+		font-family: @sans;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 2.2em;
+		padding-top: 23px;
+	}
+	p {
+		font-size: 1.6em;
+		font-weight: light;
+		line-height: 1.4em;
+		color: @warm;
+		margin-top: 30px;
+	}
+}
+
+.fiftyfloat.first {
+	margin-right: 2%;
+	margin-left: 0;
+}
+
+
+
+/*****************
+*Thumbnail Grid*
+*****************/
+
+.thumbnail_grid {
+	div {
+		float: left;
+		width: 22%;
+		margin-right: 1.5%;
+		margin-left: 1.5%;
+		margin-bottom: 17px;
+		height: 120px;
+		background-repeat: no-repeat;
+		background-origin: center;
+		background-size: 100% auto;
+		p {
+			font-family: @serif;
+			font-style: italic;
+			text-align: center;
+			font-size: 1.1em;
+			margin-top: 93px;
+		}
+	}
+}
+
+#retail {
+	background-image: url('../img/grid/retail.png');
+}
+
+#education {
+	background-image: url('../img/grid/ed.png');
+}
+
+#tech {
+	background-image: url('../img/grid/tech.png');
+}
+
+#startups {
+	background-image: url('../img/grid/start.png');
+}
+
+#government {
+	background-image: url('../img/grid/govt.png');
+}
+
+#publishing {
+	background-image: url('../img/grid/pub.png');
+}
+
+#faith {
+	background-image: url('../img/grid/faith.png');
+}
+
+#local {
+	background-image: url('../img/grid/loc.png');
+}
+
+
+/******************************************
+************    Section 3    **************
+******************************************/
+#three {
+	background-color: #fff;
+	height: 550px;
+	h2 {
+		font-family: @sans;
+		font-size: 4em;
+		text-transform: uppercase;
+		margin: 0;
+		line-height: 1.1em;
+	}
+	h2.dark {
+		color: #000;
+		margin-top: 100px;
+	}
+	h2.light {
+		color: #ececec;
+	}
+}
+
+
