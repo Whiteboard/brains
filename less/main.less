@@ -20,6 +20,7 @@ Mixins for fun times.
 @pink: #d91752;
 @green: #a2b57c;
 @warm: #ebe5da;
+@warmer: #ece6db;
 
 
 /************************
@@ -39,7 +40,8 @@ body {
 
 .section {
 	width: 100%;
-	height: 450px;
+	min-height: 450px;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -59,7 +61,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	.inner_wrap {
-		height: 450px;
+		min-height: 450px;
 	}
 }
 
@@ -145,7 +147,7 @@ Border
 ******************************************/
 #two {
 	background-color: #000;
-	height: 500px;
+	min-height: 500px;
 	.inner_wrap {
 		width: 80%;
 		max-width: 800px;
@@ -244,7 +246,7 @@ Border
 ******************************************/
 #three {
 	background-color: #fff;
-	height: 550px;
+	min-height: 550px;
 	h2 {
 		font-family: @sans;
 		font-size: 4em;
@@ -259,6 +261,93 @@ Border
 	h2.light {
 		color: #ececec;
 	}
+	.circle {
+		.circle(100px, #ececec);
+		float: right;
+		margin-top: 27px;
+		margin-right: 50px;
+	}
+	.rectangle {
+		.rectangle(30px, #fff);
+		position: relative;
+		top: 42px;
+		left: 26px;
+	}
+	.triangle-right {
+		.triangle-right(40px, #fff);
+		position: relative;
+		top: -12px;
+		left: 12px;
+	}
+	p.wide {
+		color: #000;
+		font-size: 1.4em;
+		float: left;
+		width: 78%;
+	}
 }
 
 
+/******************************************
+************    Section 4    **************
+******************************************/
+#four {
+	background-image: url('../img/junto.jpg');
+	background-position: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 600px;
+}
+
+#junto {
+	width: 100%;
+	max-width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 150px;
+	background-image: url('../img/junto_overlay.png');
+	background-position: center;
+	background-size: 95%;
+	background-repeat: no-repeat;
+}
+
+
+
+/******************************************
+************    Section 5    **************
+******************************************/
+#five {
+	min-height: 400px;
+	.inner_wrap {
+		width: 900px;
+		min-height: 400px;
+	.category {
+		width: 30%;
+		min-width: 250px;
+		height: 300px;
+		background-color: @warmer;
+		margin-top: 45px;
+		margin-left: 1.66%;
+		margin-right: 1.66%;
+		float: left;
+		p {
+			color: #7b6959;
+			font-size: 1.4sem;
+			position: relative;
+			margin-top: 260px;
+			text-align: center;
+		}
+		div {
+			background-repeat: no-repeat;
+			background-origin: center;
+			background-size: 100% auto;
+		}
+	}
+}
+}
+
+#trusts {
+	height: 20px;
+	background-image: url('../img/trust.png');
+
+}
