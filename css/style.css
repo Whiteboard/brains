@@ -1324,7 +1324,7 @@ Border
 }
 
 #five .inner_wrap {
-  width: 900px;
+  max-width: 900px;
   min-height: 400px;
 }
 
@@ -1341,21 +1341,84 @@ Border
 
 #five .inner_wrap .category p {
   position: relative;
-  margin-top: 260px;
-  font-size: 1.4sem;
+  margin-top: 210px;
+  font-size: 1.2em;
   color: #7b6959;
   text-align: center;
 }
 
 #five .inner_wrap .category div {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: -8px;
+  background-position: left top;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-origin: center;
 }
 
 #trusts {
-  height: 20px;
-  background-image: url('../img/trust.png');
+  background-image: url('../img/categories/trust.png');
+}
+
+#intensives {
+  background-image: url('../img/categories/intensives.png');
+}
+
+#ventures {
+  background-image: url('../img/categories/ventures.png');
+}
+
+/******************************************
+************    Section 6    **************
+******************************************/
+
+#six {
+  background-color: #000;
+}
+
+#six h3 {
+  padding-top: 40px;
+  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#six p {
+  font-size: 1.4em;
+  color: #fff;
+}
+
+#contact #button h4 {
+  float: left;
+  padding: 17px;
+  padding-right: 23px;
+  padding-left: 23px;
+  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+  font-size: 2.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px #fff solid;
+}
+
+#contact #button a {
+  padding: 1px;
+  margin: 0 auto;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact #button a:visited {
+  color: #fff;
+}
+
+#contact p {
+  float: left;
+  font-family: 'Fanwood', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 300;
 }
 
 /*

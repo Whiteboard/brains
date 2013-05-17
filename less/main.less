@@ -319,7 +319,7 @@ Border
 #five {
 	min-height: 400px;
 	.inner_wrap {
-		width: 900px;
+		max-width: 900px;
 		min-height: 400px;
 	.category {
 		width: 30%;
@@ -332,22 +332,85 @@ Border
 		float: left;
 		p {
 			color: #7b6959;
-			font-size: 1.4sem;
+			font-size: 1.2em;
 			position: relative;
-			margin-top: 260px;
+			margin-top: 210px;
 			text-align: center;
 		}
 		div {
 			background-repeat: no-repeat;
-			background-origin: center;
+			background-position: left top;
 			background-size: 100% auto;
+			width: 90%;
+			height: 50px;
+			margin: 0 auto;
+			margin-top: -8px;
 		}
 	}
 }
 }
 
 #trusts {
-	height: 20px;
-	background-image: url('../img/trust.png');
+	background-image: url('../img/categories/trust.png');
+}
 
+#intensives {
+	background-image: url('../img/categories/intensives.png');
+}
+
+#ventures {
+	background-image: url('../img/categories/ventures.png');
+}
+
+
+
+/******************************************
+************    Section 6    **************
+******************************************/
+#six {
+	background-color: #000;
+	h3 {
+		font-family: @sans;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 2.2em;
+		padding-top: 40px;
+	}
+	p {
+		color: #fff;
+		font-size: 1.4em;
+	}
+}
+
+#contact {
+	#button {
+		h4 {
+		padding: 17px;
+		padding-left: 23px;
+		padding-right: 23px;
+		border: 2px #fff solid;
+		float: left;
+		font-family: @sans;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 2.2em;
+		text-transform: uppercase;
+		}
+		a {
+			margin: 0 auto;
+			padding: 1px;
+			color: #fff;
+			text-decoration: none;
+		}
+		a:visited {
+			color: #fff;
+		}
+	}
+	p {
+		float: left;
+		font-weight: 300;
+		font-family: @serif;
+		font-style: italic;
+	}
 }
