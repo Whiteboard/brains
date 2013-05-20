@@ -987,6 +987,10 @@ hr {
      Less Shapes Library
 ******************************/
 
+/****************************************
+************ Media Queries **************
+****************************************/
+
 /*
 
 All site-specific styles go here.
@@ -1045,7 +1049,7 @@ body {
 }
 
 #one .inner_wrap {
-  min-height: 450px;
+  min-height: 480px;
 }
 
 /*******
@@ -1122,7 +1126,7 @@ Border
 .border {
   width: 100%;
   height: 20px;
-  margin-top: -20px;
+  margin-top: -40px;
   background-color: #000;
   opacity: 0.6;
 }
@@ -1328,6 +1332,12 @@ Border
   min-height: 400px;
 }
 
+#five .inner_wrap .inner_wrap {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 #five .inner_wrap .category {
   float: left;
   width: 30%;
@@ -1391,6 +1401,16 @@ Border
   color: #fff;
 }
 
+#contact {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact #button {
+  width: 300px;
+}
+
 #contact #button h4 {
   float: left;
   padding: 17px;
@@ -1416,9 +1436,225 @@ Border
 
 #contact p {
   float: left;
+  padding-top: 26px;
+  margin-left: 20px;
   font-family: 'Fanwood', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
+}
+
+/******************************************
+**********    Media Queries    ************
+******************************************/
+
+/*400px*/
+
+@media only screen and (max-width: 400px) {
+  {
+    /*Section 1 Tweaks*/
+  
+    /*Section 2 Tweaks*/
+  
+    /*Section 3 Tweaks*/
+  
+    /*Section 4 Tweaks*/
+  
+    /*Section 5 Tweaks*/
+  
+  }
+  .nav ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .nav ul li {
+    padding: 6px;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  h1.callout {
+    width: 100%;
+    margin-top: 60px;
+  }
+  p.followup {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .border {
+    margin-top: -40px;
+  }
+  #two {
+    min-height: 900px;
+  }
+  .fiftyfloat {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fiftyfloat.first {
+    margin: 0 auto;
+  }
+  .thumbnail_grid div {
+    margin-bottom: 35px;
+  }
+  #three {
+    min-height: 875px;
+  }
+  #three p.wide {
+    width: 100%;
+  }
+  #three .circle {
+    margin-top: 7px;
+  }
+  #four {
+    min-height: 450px;
+  }
+  #junto {
+    margin-top: 100px;
+  }
+  #five .inner_wrap .inner_wrap {
+    width: 270px;
+    margin: 0 auto;
+  }
+  #five .inner_wrap .inner_wrap .category {
+    width: 270px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+/**************
+**401px-600px**
+***************/
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  {
+    /*Section 1*/
+  
+    /*Section 2 Tweaks*/
+  
+    /*Section 3 Tweaks*/
+  
+    /*Section 5 Tweaks*/
+  
+  }
+  .nav nav.top {
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1.callout {
+    width: 100%;
+    margin-top: 70px;
+  }
+  p.followup {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 90px;
+  }
+  #two {
+    min-height: 900px;
+  }
+  .fiftyfloat {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fiftyfloat.first {
+    margin: 0 auto;
+  }
+  .thumbnail_grid div {
+    margin-bottom: 30px;
+  }
+  .thumbnail_grid div p {
+    margin-top: 108px;
+  }
+  #three p.wide {
+    margin-bottom: 80px;
+  }
+  #three .circle {
+    display: none;
+  }
+  #five .inner_wrap {
+    width: 100%;
+  }
+  #five .inner_wrap .inner_wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #five .inner_wrap .inner_wrap .category {
+    width: 30%;
+    height: 30%;
+    min-width: 200px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+/*601px-800px*/
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  {
+    /*Section 2 Tweaks*/
+  
+    /*Section 3 Tweaks*/
+  
+    /*Section 5 Tweaks*/
+  
+  }
+  .thumbnail_grid div p {
+    margin-top: 68px;
+  }
+  #three .circle {
+    margin-bottom: 50px;
+  }
+  #five .inner_wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #five .inner_wrap .inner_wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #five .inner_wrap .category.last {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/*Bigger*/
+
+@media only screen and (min-width: 801px) and (max-width: 960px) {
+  {
+    /*More Section 2 Tweaks*/
+  
+    /*Section 5 Tweaks*/
+  
+  }
+  .thumbnail_grid div {
+    margin-bottom: 33px;
+  }
+  #five .inner_wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #five .inner_wrap .inner_wrap {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+  #five .inner_wrap {
+    width: 100%;
+  }
+  #five .inner_wrap .inner_wrap {
+    width: 100%;
+  }
 }
 
 /*
