@@ -43,6 +43,9 @@ body {
 	min-height: 450px;
 	height: auto;
 	overflow: hidden;
+	background-position: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .inner_wrap {
@@ -55,15 +58,42 @@ body {
 /******************************************
 **************   Hercules   ***************
 ******************************************/
+/*Home*/
 #one {
 	background-image: url('../img/homehero.jpg');
-	background-position: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
 	.inner_wrap {
 		min-height: 480px;
 	}
 }
+
+/*Ventures*/
+#one-v {
+	background-image: url('../img/junto.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	height: 150px;
+	.junto {
+		max-width: 300px;
+		height: 180px;
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+}
+
+#one-t {
+	background-image: url('../img/trusts.png');
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#one-i {
+	background-image: url('../img/intensives.png');
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
 
 
 /*******
@@ -141,6 +171,27 @@ Border
 	margin-top:-40px;
 }
 
+.colorborder {
+	background-color: @yellow;
+	height: 70px;
+	h2 {
+		padding-top: 18px;
+		font-family: @serif;
+		font-size: 2em;
+		font-weight: 300;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.colorborder.pink {
+	background-color: @pink;
+}
+
+.colorborder.green {
+	background-color: @green;
+}
+
 
 /******************************************
 ****************Section 2******************
@@ -152,6 +203,12 @@ Border
 		width: 80%;
 		max-width: 800px;
 		margin: 0 auto;
+	}
+}
+
+#two-v {
+	.venture {
+		background-color: #fff;
 	}
 }
 
@@ -293,13 +350,10 @@ Border
 ******************************************/
 #four {
 	background-image: url('../img/junto.jpg');
-	background-position: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
 	min-height: 600px;
 }
 
-#junto {
+.junto {
 	width: 100%;
 	max-width: 500px;
 	height: 300px;
