@@ -1047,6 +1047,7 @@ body {
 /*Home*/
 
 #one {
+  background-attachment: fixed;
   background-image: url('../img/homehero.jpg');
 }
 
