@@ -21,6 +21,7 @@ Mixins for fun times.
 @green: #a2b57c;
 @warm: #ebe5da;
 @warmer: #ece6db;
+@blue: #21304f;
 
 
 /************************
@@ -40,12 +41,20 @@ body {
 
 .section {
 	width: 100%;
-	min-height: 450px;
+	min-height: 500px;
 	height: auto;
 	overflow: hidden;
-	background-position: fixed;
+	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	.row {
+		position: relative;
+		margin-top: 20px;
+		.subwrap {
+			max-width: 1000px;
+			width: 100%;
+		}
+	}
 }
 
 .inner_wrap {
@@ -71,7 +80,6 @@ body {
 #one-v {
 	background-image: url('../img/junto.jpg');
 	background-position: center;
-	background-attachment: fixed;
 	height: 150px;
 	.junto {
 		max-width: 300px;
@@ -93,6 +101,11 @@ body {
 	background-attachment: fixed;
 }
 
+#one-q {
+	background-image: url('../img/inquiries.jpg');
+	background-position: center;
+	min-height: 520px;
+}
 
 
 
@@ -193,6 +206,10 @@ Border
 	background-color: @green;
 }
 
+.colorborder.blue {
+		background-color: lighten(@blue, 10%);
+	}
+
 
 /******************************************
 ****************Section 2******************
@@ -207,9 +224,53 @@ Border
 	}
 }
 
+#two-t {
+	#focus {
+		width: 100%;
+	}
+	.photo {
+		background-image: url('../img/brains/p4.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 30%;
+		height: auto;
+		min-height: 300px;
+		float: left;
+	}
+	.bio {
+		float: left;
+		width: 63%;
+		margin-left: 2%;
+		h4 {
+			text-transform: uppercase;
+			font-family: @sans;
+			color: #000;
+			font-size: 2em;
+		}
+		p {
+			font-size: 1.4em;
+			color: #000;
+		}
+	}
+}
+
 #two-v {
 	.venture {
-		background-color: #fff;
+		background-color: #000;
+		width: 30%;
+		height: 200px;
+	}
+}
+
+#two-q {
+	p.wide {
+		margin: 0 auto;
+		margin-top: 100px;
+		font-size: 2em;
+		color: #000;
+		max-width: 900px;
+		width: 90%;
 	}
 }
 
@@ -312,18 +373,20 @@ Border
 		margin: 0;
 		line-height: 1.1em;
 	}
-	h2.dark {
-		color: #000;
+	h2.top {
 		margin-top: 100px;
 	}
 	h2.light {
 		color: #ececec;
 	}
+	h2.focus {
+		color: #000;
+	}
 	.circle {
 		.circle(100px, #ececec);
 		float: right;
-		margin-top: 27px;
-		margin-right: 50px;
+		margin-top: -27px;
+		margin-right: 120px;
 	}
 	.rectangle {
 		.rectangle(30px, #fff);
@@ -342,6 +405,15 @@ Border
 		font-size: 1.4em;
 		float: left;
 		width: 78%;
+	}
+	.expandograph {
+		height: 0;
+		transition: all ease-in .2s;
+		overflow: hidden;
+		padding-bottom: 0;
+	}
+	.expandograph.open {
+		height: 200px;
 	}
 }
 
@@ -450,16 +522,21 @@ Border
 	#button {
 		width:300px;
 		h4 {
-		padding: 17px;
-		padding-left: 23px;
-		padding-right: 23px;
-		border: 2px #fff solid;
-		float: left;
-		font-family: @sans;
-		font-weight: 600;
-		text-transform: uppercase;
-		font-size: 2.2em;
-		text-transform: uppercase;
+			padding: 17px;
+			padding-left: 23px;
+			padding-right: 23px;
+			border: 2px #fff solid;
+			float: left;
+			font-family: @sans;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: 2.2em;
+			transition: all ease-in .2s;
+			background-color: none;
+		}
+		h4:hover {
+			
+			border-left: 10px #fff solid;
 		}
 		a {
 			margin: 0 auto;
@@ -481,6 +558,15 @@ Border
 	}
 }
 
+
+
+/******************************************
+*****************Ventures******************
+******************************************/
+.venture {
+	background-color: #000;
+	height: 200px;
+}
 
 
 
@@ -685,6 +771,8 @@ Border
 
 /*Bigger*/
 @media @large {
+
+
 	/*More Section 2 Tweaks*/
 	.thumbnail_grid {
 		div {
@@ -707,6 +795,7 @@ Border
 }
 
 
+/*Gigantic*/
 @media @huge {
 	#five {
 		.inner_wrap {
@@ -716,4 +805,9 @@ Border
 			}
 		}
 	}
+}
+
+
+@media @gigantic {
+
 }

@@ -44,9 +44,9 @@ production:
 	@echo "Modify plugins.js and script.js, then use the Makefile, please. */" >> js/main.js
 	@cat js/plugins.js js/script.js >> js/main.js
 	@echo "Hinting JS"
-	@jshint js/main.js
+	#@jshint js/main.js
 	@echo "Min'ing JS"
-	@uglifyjs -nc js/main.js > js/main.min.js
+	#@uglifyjs -nc js/main.js > js/main.min.js
 	@echo "${CHECK} Donezo at ${DATE}"
 
 clean:

@@ -1026,11 +1026,21 @@ body {
 .section {
   width: 100%;
   height: auto;
-  min-height: 450px;
+  min-height: 500px;
   overflow: hidden;
-  background-position: fixed;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section .row {
+  position: relative;
+  margin-top: 20px;
+}
+
+.section .row .subwrap {
+  width: 100%;
+  max-width: 1000px;
 }
 
 .inner_wrap {
@@ -1059,7 +1069,6 @@ body {
 
 #one-v {
   height: 150px;
-  background-attachment: fixed;
   background-image: url('../img/junto.jpg');
   background-position: center;
 }
@@ -1080,6 +1089,12 @@ body {
 #one-i {
   background-attachment: fixed;
   background-image: url('../img/intensives.png');
+  background-position: center;
+}
+
+#one-q {
+  min-height: 520px;
+  background-image: url('../img/inquiries.jpg');
   background-position: center;
 }
 
@@ -1184,6 +1199,10 @@ Border
   background-color: #a2b57c;
 }
 
+.colorborder.blue {
+  background-color: #304673;
+}
+
 /******************************************
 ****************Section 2******************
 ******************************************/
@@ -1199,8 +1218,52 @@ Border
   margin: 0 auto;
 }
 
+#two-t #focus {
+  width: 100%;
+}
+
+#two-t .photo {
+  float: left;
+  width: 30%;
+  height: auto;
+  min-height: 300px;
+  background-image: url('../img/brains/p4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#two-t .bio {
+  float: left;
+  width: 63%;
+  margin-left: 2%;
+}
+
+#two-t .bio h4 {
+  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+  font-size: 2em;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#two-t .bio p {
+  font-size: 1.4em;
+  color: #000;
+}
+
 #two-v .venture {
-  background-color: #fff;
+  width: 30%;
+  height: 200px;
+  background-color: #000;
+}
+
+#two-q p.wide {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-size: 2em;
+  color: #000;
 }
 
 .fiftyfloat {
@@ -1304,21 +1367,24 @@ Border
   text-transform: uppercase;
 }
 
-#three h2.dark {
+#three h2.top {
   margin-top: 100px;
-  color: #000;
 }
 
 #three h2.light {
   color: #ececec;
 }
 
+#three h2.focus {
+  color: #000;
+}
+
 #three .circle {
   float: right;
   width: 100px;
   height: 100px;
-  margin-top: 27px;
-  margin-right: 50px;
+  margin-top: -27px;
+  margin-right: 120px;
   background: #ececec;
   -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
@@ -1350,6 +1416,17 @@ Border
   width: 78%;
   font-size: 1.4em;
   color: #000;
+}
+
+#three .expandograph {
+  height: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  transition: all ease-in 0.2s;
+}
+
+#three .expandograph.open {
+  height: 200px;
 }
 
 /******************************************
@@ -1474,7 +1551,13 @@ Border
   font-size: 2.2em;
   font-weight: 600;
   text-transform: uppercase;
+  background-color: none;
   border: 2px #fff solid;
+  transition: all ease-in 0.2s;
+}
+
+#contact #button h4:hover {
+  border-left: 10px #fff solid;
 }
 
 #contact #button a {
@@ -1495,6 +1578,15 @@ Border
   font-family: 'Fanwood', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
+}
+
+/******************************************
+*****************Ventures******************
+******************************************/
+
+.venture {
+  height: 200px;
+  background-color: #000;
 }
 
 /******************************************
@@ -1702,6 +1794,8 @@ Border
   }
 }
 
+/*Gigantic*/
+
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
   #five .inner_wrap {
     width: 100%;
@@ -1709,6 +1803,10 @@ Border
   #five .inner_wrap .inner_wrap {
     width: 100%;
   }
+}
+
+@media only screen and (min-width: 1201px) {
+  
 }
 
 /*
