@@ -1080,18 +1080,6 @@ body {
   margin-bottom: 50px;
 }
 
-#one-t {
-  background-attachment: fixed;
-  background-image: url('../img/trusts.png');
-  background-position: center;
-}
-
-#one-i {
-  background-attachment: fixed;
-  background-image: url('../img/intensives.png');
-  background-position: center;
-}
-
 #one-q {
   min-height: 520px;
   background-image: url('../img/inquiries.jpg');
@@ -1465,14 +1453,6 @@ Border
   background-size: 100% auto;
 }
 
-#trusts {
-  background-image: url('../img/categories/trust.png');
-}
-
-#intensives {
-  background-image: url('../img/categories/intensives.png');
-}
-
 #ventures {
   background-image: url('../img/categories/ventures.png');
 }
@@ -1557,8 +1537,44 @@ Border
 }
 
 /******************************************
+****************Intensives*****************
+******************************************/
+
+#one-i {
+  background-attachment: fixed;
+  background-image: url('../img/intensives.png');
+  background-position: center;
+}
+
+#intensives {
+  background-image: url('../img/categories/intensives.png');
+}
+
+#two-i .inner_wrap {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#two-i .inner_wrap .row {
+  width: 100%;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
+}
+
+/******************************************
 ******************Trusts*******************
 ******************************************/
+
+#one-t {
+  background-attachment: fixed;
+  background-image: url('../img/trusts.png');
+  background-position: center;
+}
+
+#trusts {
+  background-image: url('../img/categories/trust.png');
+}
 
 #two-t .inner_wrap {
   width: 80%;
@@ -1618,7 +1634,7 @@ Border
   border-bottom: 1px solid #000;
 }
 
-#two-t .mind {
+#two-t .grid {
   display: block;
   float: left;
   width: 31%;
@@ -1632,7 +1648,7 @@ Border
   background-size: cover;
 }
 
-#two-t .mind .name {
+#two-t .grid .name {
   position: relative;
   top: 70px;
   height: 50px;
@@ -1642,7 +1658,7 @@ Border
   transition: all ease-in 0.2s;
 }
 
-#two-t .mind .name h5 {
+#two-t .grid .name h5 {
   position: relative;
   top: 12px;
   font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
@@ -1651,7 +1667,7 @@ Border
   text-transform: uppercase;
 }
 
-#two-t .mind:hover .name {
+#two-t .grid:hover .name {
   opacity: 1;
 }
 
