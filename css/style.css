@@ -1218,39 +1218,6 @@ Border
   margin: 0 auto;
 }
 
-#two-t #focus {
-  width: 100%;
-}
-
-#two-t .photo {
-  float: left;
-  width: 30%;
-  height: auto;
-  min-height: 300px;
-  background-image: url('../img/brains/p4.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#two-t .bio {
-  float: left;
-  width: 63%;
-  margin-left: 2%;
-}
-
-#two-t .bio h4 {
-  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
-  font-size: 2em;
-  color: #000;
-  text-transform: uppercase;
-}
-
-#two-t .bio p {
-  font-size: 1.4em;
-  color: #000;
-}
-
 #two-v .venture {
   width: 30%;
   height: 200px;
@@ -1587,6 +1554,264 @@ Border
 .venture {
   height: 200px;
   background-color: #000;
+}
+
+/******************************************
+******************Trusts*******************
+******************************************/
+
+#two-t .inner_wrap {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#two-t .inner_wrap .row {
+  width: 100%;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
+}
+
+#two-t #focus {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#two-t .photo {
+  float: left;
+  width: 30%;
+  height: auto;
+  min-width: 300px;
+  min-height: 250px;
+  background-image: url('../img/brains/p4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#two-t .bio {
+  float: left;
+  width: 60%;
+  margin-left: 2%;
+}
+
+#two-t .bio h4 {
+  margin-top: -3px;
+  margin-bottom: 0;
+  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+  font-size: 1.6em;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#two-t .bio p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #000;
+}
+
+#two-t #border {
+  width: 100%;
+  height: 2px;
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid #000;
+}
+
+#two-t .mind {
+  display: block;
+  float: left;
+  width: 31%;
+  height: auto;
+  min-width: 200px;
+  min-height: 190px;
+  margin: 0 auto;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#two-t .mind .name {
+  position: relative;
+  top: 70px;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all ease-in 0.2s;
+}
+
+#two-t .mind .name h5 {
+  position: relative;
+  top: 12px;
+  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#two-t .mind:hover .name {
+  opacity: 1;
+}
+
+#two-t .grid-margin {
+  float: left;
+  width: 3.5%;
+  height: 100%;
+  min-width: 20px;
+  min-height: 190px;
+}
+
+#two-t #eric {
+  background-image: url('../img/brains/p3.jpg');
+}
+
+#two-t #nick {
+  background-image: url('../img/brains/p4.jpg');
+}
+
+#two-t #person {
+  background-image: url('../img/brains/p2.jpg');
+}
+
+#two-t #person2 {
+  background-image: url('../img/brains/p1.jpg');
+}
+
+#three-t {
+  background-color: #cccccc;
+}
+
+#three-t .inner_wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#three-t .inner_wrap .row {
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
+}
+
+#three-t .inner_wrap .row .mentor .circle {
+  margin-right: 3.5%;
+  margin-left: 3.5%;
+}
+
+#three-t .inner_wrap .row .mentor .circle .name {
+  position: relative;
+  top: 30px;
+  height: auto;
+  text-align: center;
+  background-color: #cccccc;
+  opacity: 0;
+  transition: all ease-in 0.2s;
+}
+
+#three-t .inner_wrap .row .mentor .circle .name h5 {
+  position: relative;
+  top: 12px;
+  padding-bottom: 20px;
+  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#three-t .inner_wrap .row .mentor .circle .name:hover {
+  opacity: 1.0;
+}
+
+#three-t .inner_wrap .row .mentor .circle.one {
+  background-image: url('../img/mentors/1.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.two {
+  background-image: url('../img/mentors/2.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.three {
+  background-image: url('../img/mentors/3.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.four {
+  background-image: url('../img/mentors/4.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.five {
+  background-image: url('../img/mentors/5.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.six {
+  background-image: url('../img/mentors/6.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.seven {
+  background-image: url('../img/mentors/7.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.eight {
+  background-image: url('../img/mentors/8.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.nine {
+  background-image: url('../img/mentors/9.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.ten {
+  background-image: url('../img/mentors/10.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.eleven {
+  background-image: url('../img/mentors/11.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.twelve {
+  background-image: url('../img/mentors/12.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.thirteen {
+  background-image: url('../img/mentors/13.jpg');
+}
+
+#three-t .inner_wrap .row .mentor .circle.fourteen {
+  background-image: url('../img/mentors/14.jpg');
+}
+
+#three-t .inner_wrap .row .row.top {
+  margin-top: 120px;
+}
+
+#three-t .inner_wrap .row.four {
+  width: 90%;
+  max-width: 800px;
+}
+
+#three-t .inner_wrap .row.four .mentor .circle {
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+}
+
+#three-t .circle {
+  float: left;
+  width: 170px;
+  height: 170px;
+  background: #e2e2e2;
+  background-image: url('../img/brains/p2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-border-radius: 85px;
+     -moz-border-radius: 85px;
+          border-radius: 85px;
+}
+
+#four-t {
+  min-height: 300px;
+  background-color: #808080;
 }
 
 /******************************************

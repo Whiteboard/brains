@@ -22,6 +22,8 @@ Mixins for fun times.
 @warm: #ebe5da;
 @warmer: #ece6db;
 @blue: #21304f;
+@transparent: rgba(0, 0, 0, 0.5);
+@light-grey: #cccccc;
 
 
 /************************
@@ -224,36 +226,6 @@ Border
 	}
 }
 
-#two-t {
-	#focus {
-		width: 100%;
-	}
-	.photo {
-		background-image: url('../img/brains/p4.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		width: 30%;
-		height: auto;
-		min-height: 300px;
-		float: left;
-	}
-	.bio {
-		float: left;
-		width: 63%;
-		margin-left: 2%;
-		h4 {
-			text-transform: uppercase;
-			font-family: @sans;
-			color: #000;
-			font-size: 2em;
-		}
-		p {
-			font-size: 1.4em;
-			color: #000;
-		}
-	}
-}
 
 #two-v {
 	.venture {
@@ -569,6 +541,239 @@ Border
 }
 
 
+
+
+
+/******************************************
+******************Trusts*******************
+******************************************/
+	#two-t {
+		.inner_wrap {
+			width: 80%;
+			max-width: 1000px;
+			margin: 0 auto;
+			.row {
+				width: 100%;
+				margin-top: 3.5%;
+				margin-bottom: 3.5%;
+			}
+		}
+		#focus {
+			width: 100%;
+			margin-top: 40px;
+		}
+		.photo {
+			background-image: url('../img/brains/p4.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 30%;
+			min-width: 300px;
+			height: auto;
+			min-height: 250px;
+			float: left;
+		}
+		.bio {
+			float: left;
+			width: 60%;
+			margin-left: 2%;
+			h4 {
+				text-transform: uppercase;
+				font-family: @sans;
+				color: #000;
+				font-size: 1.6em;
+				margin-bottom: 0;
+				margin-top: -3px;
+			}
+			p {
+				margin-top: 0;
+				margin-bottom: 10px;
+				font-size: 1.4em;
+				color: #000;
+			}
+		}
+		#border {
+			border-bottom: 1px solid #000;
+			width: 100%;
+			height: 2px;
+			margin: 20px 0 20px 0;
+		}
+	
+		.mind {
+			width: 31%;
+			min-width: 200px;
+			height: auto;
+			min-height: 190px;
+			display: block;
+			float: left;
+			background-color: #000;
+			margin: 0 auto;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			.name {
+				position: relative;
+				top: 70px;
+				text-align: center;
+				background-color: @transparent;
+				height: 50px;
+				opacity: 0;
+				transition: all ease-in .2s;
+				h5 {
+					font-size: 1.5em;
+					text-transform: uppercase;
+					text-align: center;
+					font-family: @sans;
+					position: relative;
+					top: 12px;
+				}
+			}
+		}
+	
+		.mind:hover {
+			.name {
+				opacity: 1;
+			}
+	
+		}
+	
+		.grid-margin {
+			width: 3.5%;
+			min-width: @gutter;
+			height: 100%;
+			min-height: 190px;
+			float: left;
+		}
+	
+		#eric {
+			background-image: url('../img/brains/p3.jpg');
+		}
+		#nick {
+			background-image: url('../img/brains/p4.jpg');
+		}
+		#person {
+			background-image: url('../img/brains/p2.jpg');
+		}
+		#person2 {
+			background-image: url('../img/brains/p1.jpg');
+		}
+		#person3 {
+	
+		}
+		#person4 {
+		}
+	}
+	
+	
+	#three-t {
+		background-color: @light-grey;
+		.inner_wrap {
+			width: 100%;
+			margin: 0 auto;
+			.row {
+				width: 70%;
+				max-width: 700px;
+				margin: 0 auto;
+				margin-top: 3.5%;
+				margin-bottom: 3.5%;
+				.mentor {
+					.circle {
+					margin-left: 3.5%;
+					margin-right: 3.5%;
+					.name {
+						position: relative;
+						top: 30px;
+						text-align: center;
+						background-color: @light-grey;
+						height: auto;
+						opacity: 0;
+						transition: all ease-in .2s;
+							h5 {
+								font-size: 1.5em;
+								text-transform: uppercase;
+								text-align: center;
+								font-family: @sans;
+								position: relative;
+								top: 12px;
+								padding-bottom: 20px;
+							}
+					}
+					.name:hover {
+						opacity: 1.0;
+					}
+					}
+					.circle.one {
+						background-image: url('../img/mentors/1.jpg');
+					}
+					.circle.two {
+						background-image: url('../img/mentors/2.jpg');
+					}
+					.circle.three {
+						background-image: url('../img/mentors/3.jpg');
+					}
+					.circle.four {
+						background-image: url('../img/mentors/4.jpg');
+					}
+					.circle.five {
+						background-image: url('../img/mentors/5.jpg');
+					}
+					.circle.six {
+						background-image: url('../img/mentors/6.jpg');
+					}
+					.circle.seven {
+						background-image: url('../img/mentors/7.jpg');
+					}
+					.circle.eight {
+						background-image: url('../img/mentors/8.jpg');
+					}
+					.circle.nine {
+						background-image: url('../img/mentors/9.jpg');
+					}
+					.circle.ten {
+						background-image: url('../img/mentors/10.jpg');
+					}
+					.circle.eleven {
+						background-image: url('../img/mentors/11.jpg');
+					}
+					.circle.twelve {
+						background-image: url('../img/mentors/12.jpg');
+					}
+					.circle.thirteen {
+						background-image: url('../img/mentors/13.jpg');
+					}
+					.circle.fourteen {
+						background-image: url('../img/mentors/14.jpg');
+					}
+				}
+			.row.top {
+				margin-top: 120px;
+				}
+			}
+			.row.four {
+				width: 90%;
+				max-width: 800px;
+				.mentor {
+					.circle {
+					margin-left: 1.5%;
+					margin-right: 1.5%;
+					}
+				}
+			}
+		}
+	.circle {
+			.circle(170px, #e2e2e2);
+			background-image: url('../img/brains/p2.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			float: left;
+		}
+	}
+
+#four-t {
+	background-color: darken(@light-grey, 30%);
+	min-height: 300px;
+}
 
 /******************************************
 **********    Media Queries    ************
