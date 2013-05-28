@@ -1050,6 +1050,51 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: block;
+  float: left;
+  width: 31%;
+  height: auto;
+  min-width: 200px;
+  min-height: 190px;
+  margin: 0 auto;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid .name {
+  position: relative;
+  top: 70px;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all ease-in 0.2s;
+}
+
+.grid .name h5 {
+  position: relative;
+  top: 12px;
+  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grid:hover .name {
+  opacity: 1;
+}
+
+.grid-margin {
+  float: left;
+  width: 3.5%;
+  height: 100%;
+  min-width: 20px;
+  min-height: 190px;
+}
+
 /******************************************
 **************   Hercules   ***************
 ******************************************/
@@ -1562,6 +1607,13 @@ Border
   margin-bottom: 3.5%;
 }
 
+#senate {
+  background-image: url(../img/intensives/senate.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /******************************************
 ******************Trusts*******************
 ******************************************/
@@ -1632,51 +1684,6 @@ Border
   height: 2px;
   margin: 20px 0 20px 0;
   border-bottom: 1px solid #000;
-}
-
-#two-t .grid {
-  display: block;
-  float: left;
-  width: 31%;
-  height: auto;
-  min-width: 200px;
-  min-height: 190px;
-  margin: 0 auto;
-  background-color: #000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#two-t .grid .name {
-  position: relative;
-  top: 70px;
-  height: 50px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all ease-in 0.2s;
-}
-
-#two-t .grid .name h5 {
-  position: relative;
-  top: 12px;
-  font-family: 'Brandon Grotesque', 'Open Sans', 'Helvetica' sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#two-t .grid:hover .name {
-  opacity: 1;
-}
-
-#two-t .grid-margin {
-  float: left;
-  width: 3.5%;
-  height: 100%;
-  min-width: 20px;
-  min-height: 190px;
 }
 
 #two-t #eric {
