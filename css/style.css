@@ -1531,6 +1531,7 @@ Border
 #contact {
   width: 80%;
   max-width: 700px;
+  padding-bottom: 80px;
   margin: 0 auto;
 }
 
@@ -1574,15 +1575,44 @@ Border
   font-family: 'Fanwood', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
+  border: none;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
 }
 
 /******************************************
 *****************Ventures******************
 ******************************************/
 
-.venture {
+#two-v .grid {
   height: 200px;
-  background-color: #000;
+  background-color: #efefef;
+}
+
+#junto {
+  background-image: url('../img/junto_overlay.png');
+}
+
+#whiteboard {
+  background-image: url('../img/ventures/wb.png');
+}
+
+#southtree {
+  background-image: url('../img/ventures/south.png');
+}
+
+#regenerate {
+  background-image: url('../img/ventures/regen.png');
+}
+
+#matsuno {
+  background-image: url('../img/ventures/matsuno.png');
+}
+
+#tto {
+  background-image: url('../img/ventures/tto.png');
 }
 
 /******************************************

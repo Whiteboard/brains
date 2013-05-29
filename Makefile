@@ -56,7 +56,7 @@ clean:
 
 watch:
 	@echo "Watching less and js files..."; \
-	watchr -e "watch('less/.*\.less|js/script.js|js/plugins.js') { system 'make production' }"
+	observr -e "watch('less/.*\.less|js/script.js|js/plugins.js') { system 'make production' }"
 
 install:
 	@echo "Installing components... this may take a while..."
