@@ -1498,6 +1498,10 @@ Border
   background-size: 100% auto;
 }
 
+#five .inner_wrap #intensives {
+  background-image: url('../img/categories/intensives.png');
+}
+
 #ventures {
   background-image: url('../img/categories/ventures.png');
 }
@@ -1591,10 +1595,6 @@ Border
   background-position: center;
 }
 
-#intensives {
-  background-image: url('../img/categories/intensives.png');
-}
-
 #two-i .inner_wrap {
   width: 80%;
   max-width: 1000px;
@@ -1609,9 +1609,26 @@ Border
 
 #senate {
   background-image: url(../img/intensives/senate.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+#bac {
+  background-image: url(../img/intensives/senate.jpg);
+}
+
+#blood {
+  background-image: url(../img/intensives/senate.jpg);
+}
+
+#sun {
+  background-image: url(../img/intensives/senate.jpg);
+}
+
+#ella {
+  background-image: url(../img/intensives/senate.jpg);
+}
+
+#ym {
+  background-image: url(../img/intensives/senate.jpg);
 }
 
 /******************************************
@@ -1700,6 +1717,14 @@ Border
 
 #two-t #person2 {
   background-image: url('../img/brains/p1.jpg');
+}
+
+#two-t #person3 {
+  background-image: url('../img/brains/p6.jpg');
+}
+
+#two-t #person4 {
+  background-image: url('../img/brains/p5.jpg');
 }
 
 #three-t {
