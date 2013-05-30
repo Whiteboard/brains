@@ -377,7 +377,7 @@ Border
 ******************************************/
 #three {
 	background-color: #fff;
-	min-height: 550px;
+	min-height: 600px;
 	h2 {
 		font-family: @sans;
 		font-size: 4em;
@@ -397,8 +397,8 @@ Border
 	.circle {
 		.circle(100px, #ececec);
 		float: right;
-		margin-top: -27px;
-		margin-right: 120px;
+		margin-top: -37px;
+		margin-right: 80px;
 	}
 	.rectangle {
 		.rectangle(30px, #fff);
@@ -420,12 +420,16 @@ Border
 	}
 	.expandograph {
 		height: 0;
-		transition: all ease-in .2s;
+		width: 0;
 		overflow: hidden;
+		opacity: 0;
+		transition: all ease-in .5s;
 		padding-bottom: 0;
 	}
 	.expandograph.open {
-		height: 200px;
+		height: 200px;	
+		width: 100%;
+		opacity: 1;
 	}
 }
 
@@ -1076,7 +1080,7 @@ Border
 }
 
 
-/*Gigantic*/
+/*Big Guy*/
 @media @huge {
 	#five {
 		.inner_wrap {
@@ -1089,6 +1093,12 @@ Border
 }
 
 
-@media @gigantic {
 
+/*Biggest Guy*/
+@media @gigantic {
+	#three {
+		.circle {
+			margin-top: -220px;
+		}
+	}
 }
