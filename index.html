@@ -179,12 +179,12 @@
 
 
         <!--Ben Franklin was the man.-->
-        <div id="four" class="section">
-        <div class="inner_wrap">
-            <div class="junto">
-                
-            </div>
-        </div>
+        <div id="four" class="section wrap">
+                <div id="projects">
+                    <div id="wbSlide1"></div>
+                    <div id="wbSlide2"></div>
+                    <div id="wbSlide3"></div>
+                </div>
         </div>
 
 
@@ -229,7 +229,7 @@
 
 
             <div id="contact" class="row">
-                <div id="button"><a href="mailto:hello@agroupofbrains.is"><h4>Contact Us</h4></a></div>
+                <div id="button"><a href="inquiries.html"><h4>Contact Us</h4></a></div>
                 <div><p>for inquiries about consulting opportunities & new ventures.</p></div>
             </div>
 
@@ -243,6 +243,12 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/lib/jquery-1.9.0.min.js"><\/script>')</script>
+            <script src="js/wbslider.js"></script>
+                <script>
+                    jQuery(document).ready(function($){
+                    $("#projects").wbSlider();
+                    });
+                </script>
         <!-- ember
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-rc.3/ember.min.js"></script>
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ember-data.js/0.8.0-latest20121123/ember-data-latest.min.js"></script>

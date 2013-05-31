@@ -438,8 +438,41 @@ Border
 ************    Section 4    **************
 ******************************************/
 #four {
-	background-image: url('../img/junto.jpg');
+	width: 100%;
 	min-height: 600px;
+	.wrap {
+		width: 100%;
+		min-height: 600px;
+		z-index: 3;
+	}
+	#projects {
+		width: 100%;
+		min-height: 600px;
+		div {
+			min-width: 400px;
+		}
+	}
+	#wbSlide1 {
+		background-image: url('../img/slider/junto.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		min-height: 600px;
+	}
+	#wbSlide2 {
+		background-image: url('../img/slider/3to.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		min-height: 600px;
+	}
+	#wbSlide3 {
+		background-image: url('../img/slider/youmatter.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		min-height: 600px;
+	}
 }
 
 .junto {
@@ -453,6 +486,7 @@ Border
 	background-size: 95%;
 	background-repeat: no-repeat;
 }
+
 
 
 
@@ -478,12 +512,16 @@ Border
 		margin-left: 1.66%;
 		margin-right: 1.66%;
 		float: left;
+		transition: all .3s ease-in;
+		.translate3d(0,0,0);
 		p {
 			color: #7b6959;
 			font-size: 1.2em;
 			position: relative;
 			margin-top: 210px;
 			text-align: center;
+			transition: all .3s ease-in;
+			.translate3d(0,0,0);
 		}
 		div {
 			background-repeat: no-repeat;
@@ -500,6 +538,12 @@ Border
 	}	
 
 	.category:hover {
+		width: 31%;
+		margin-left: 1.16%;
+		margin-right: 1.16%;
+		p {
+			font-size: 1.22em;
+		}
 	}
 }
 }
@@ -584,8 +628,16 @@ Border
 ******************************************/
 #two-v {
 	.grid {
-		background-color: #efefef;
+		background-color: #d6d6d6;
 		height: 200px;
+		transition: all .3s ease-in;
+		&:hover {
+		background-color: darken(#d6d6d6, 20%);
+	}
+	}
+	
+	.row {
+		margin-bottom: 30px;
 	}
 }
 
