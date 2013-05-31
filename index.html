@@ -180,11 +180,14 @@
 
         <!--Ben Franklin was the man.-->
         <div id="four" class="section wrap">
-                <div id="projects">
-                    <div id="wbSlide1"></div>
-                    <div id="wbSlide2"></div>
-                    <div id="wbSlide3"></div>
+            <div class="slidewrap"> 
+                <div class="slidewrap-inner">
+                    <div id="slide_one" class="slide current"><div id="junto-logo" class="logo_float"></div></div>
+                    <div id="slide_two" class="slide"><div id="threethoughts-logo" class="logo_float"></div></div>
+                    <div id="slide_three" class="slide"><div id="ym-logo" class="logo_float"></div></div>
                 </div>
+            </div>
+
         </div>
 
 
@@ -197,11 +200,11 @@
                 <p>Meetings of the minds.</p>
             </div>
             <div class="category">
-                <div id="intensives"></div>
+                <a href="intensives.html"><div id="intensives"></div></a>
                 <p>Time-sensitive collaborations.</p>
             </div>
             <div class="category last">
-                <div id="ventures"></div>
+                <a href="ventures.html"><div id="ventures"></div></a>
                 <p>Our companies, our babies.</p>
             </div>
             </div>
@@ -243,12 +246,7 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/lib/jquery-1.9.0.min.js"><\/script>')</script>
-            <script src="js/wbslider.js"></script>
-                <script>
-                    jQuery(document).ready(function($){
-                    $("#projects").wbSlider();
-                    });
-                </script>
+
         <!-- ember
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-rc.3/ember.min.js"></script>
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ember-data.js/0.8.0-latest20121123/ember-data-latest.min.js"></script>

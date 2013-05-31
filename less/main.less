@@ -440,51 +440,70 @@ Border
 #four {
 	width: 100%;
 	min-height: 600px;
-	.wrap {
-		width: 100%;
-		min-height: 600px;
-		z-index: 3;
-	}
-	#projects {
-		width: 100%;
-		min-height: 600px;
-		div {
-			min-width: 400px;
-		}
-	}
-	#wbSlide1 {
-		background-image: url('../img/slider/junto.jpg');
+   .slidewrap {
+        width: 100%;
+        min-width: 350px; /* or whatever */
+        overflow: hidden;
+        min-height: 600px;
+        position: relative; /* this is necessary to allow the child to be absolutely positioned */
+    }
+    .slidewrap-inner {
+        width: 400%; /* number of slides * width of slide, OR 100*num of slides+% */
+        height: 100%;
+        position: absolute; /* lets us set the position of the slide tray initially */
+        top: 0px; /* position is "relative" to slidewrap */
+        left: 0px;
+        transition: all 0.7s;
+    }
+    .slide {
+        position: relative;
+        height: 600px;
+        float: left;
+  		transition: all 1s ease-in-out;
+        width: 25%;/* percent OF CONTAINING ELEMENT! in general, 1/num of slides * 100*/
+        /* this width translates to the full width of the .slidewrap element */
+    }
+    #slide_one{
+    	background-image: url('../img/slider/junto.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 100%;
-		min-height: 600px;
-	}
-	#wbSlide2 {
-		background-image: url('../img/slider/3to.jpg');
+		background-origin: center;
+    }
+    #slide_two{
+    	background-image: url('../img/slider/3to.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 100%;
-		min-height: 600px;
-	}
-	#wbSlide3 {
-		background-image: url('../img/slider/youmatter.jpg');
+		background-origin: center;
+    }
+    #slide_three{
+    	background-image: url('../img/slider/youmatter.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 100%;
-		min-height: 600px;
-	}
+		background-origin: center;
+    }
 }
 
-.junto {
+.logo_float {
 	width: 100%;
-	max-width: 500px;
+	max-width: 400px;
 	height: 300px;
 	margin: 0 auto;
 	margin-top: 150px;
-	background-image: url('../img/junto_overlay.png');
 	background-position: center;
 	background-size: 95%;
 	background-repeat: no-repeat;
+}
+
+#junto-logo {
+		background-image: url('../img/junto_overlay.png');
+}
+
+#threethoughts-logo {
+		background-image: url('../img/3tologo.png');
+}
+
+#ym-logo {
+		background-image: url('../img/slider/ymlogo.png');
 }
 
 
@@ -518,7 +537,7 @@ Border
 			color: #7b6959;
 			font-size: 1.2em;
 			position: relative;
-			margin-top: 210px;
+			margin-top: -40px;
 			text-align: center;
 			transition: all .3s ease-in;
 			.translate3d(0,0,0);
@@ -531,6 +550,10 @@ Border
 			height: 50px;
 			margin: 0 auto;
 			margin-top: -8px;
+		}
+		a {
+			display: block;
+			height: 300px;
 		}
 	}
 	#intensives {
