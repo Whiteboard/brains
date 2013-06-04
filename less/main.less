@@ -756,20 +756,19 @@ Border
 				margin-bottom: 3.5%;
 			}
 		}
-		#focus {
+
+
+		/*Details*/
+		.detail {
 			width: 100%;
 			margin-top: 40px;
+			display: none;
+			opacity: 0;
+			transition: all .4s ease-in-out;
 		}
-		.photo {
-			background-image: url('../img/brains/p4.jpg');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			width: 30%;
-			min-width: 300px;
-			height: auto;
-			min-height: 250px;
-			float: left;
+		.focus {
+			display: block;
+			opacity: 1;
 		}
 		.bio {
 			float: left;
@@ -790,6 +789,47 @@ Border
 				color: #000;
 			}
 		}
+		.photo {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 30%;
+			min-width: 300px;
+			height: auto;
+			min-height: 250px;
+			float: left;
+		}
+		#nick {
+			.photo{
+			background-image: url('../img/brains/p4.jpg');
+			}
+		}
+		#eric {
+			.photo {
+			background-image: url('../img/brains/p3.jpg');
+			}
+		}
+		#myles {
+			.photo {
+			background-image: url('../img/brains/p2.jpg');
+			}
+		}
+		#adam {
+			.photo {
+			background-image: url('../img/brains/p1.jpg');
+			}
+		}
+		#chris {
+			.photo {
+			background-image: url('../img/brains/p6.jpg');
+			}
+		}
+		#taylor {
+			.photo {
+			background-image: url('../img/brains/p5.jpg');
+			}
+		}
+		
 
 		#border {
 		border-bottom: 1px solid #000;
@@ -799,25 +839,29 @@ Border
 		}
 		
 	
+	/*Thumbnails*/
+
+	.thumbs {
 		#eric {
 			background-image: url('../img/brains/p3.jpg');
 		}
 		#nick {
 			background-image: url('../img/brains/p4.jpg');
 		}
-		#person {
+		#myles {
 			background-image: url('../img/brains/p2.jpg');
 		}
-		#person2 {
+		#adam {
 			background-image: url('../img/brains/p1.jpg');
 		}
-		#person3 {
+		#chris {
 			background-image: url('../img/brains/p6.jpg');
 		}
-		#person4 {
+		#taylor {
 			background-image: url('../img/brains/p5.jpg');
 		}
 	}
+}
 	
 	
 	#three-t {

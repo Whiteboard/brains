@@ -1770,6 +1770,13 @@ Border
   background-image: url('../img/categories/trust.png');
 }
 
+#two-t {
+  /*Details*/
+
+  /*Thumbnails*/
+
+}
+
 #two-t .inner_wrap {
   width: 80%;
   max-width: 1000px;
@@ -1782,21 +1789,17 @@ Border
   margin-bottom: 3.5%;
 }
 
-#two-t #focus {
+#two-t .detail {
+  display: none;
   width: 100%;
   margin-top: 40px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
 
-#two-t .photo {
-  float: left;
-  width: 30%;
-  height: auto;
-  min-width: 300px;
-  min-height: 250px;
-  background-image: url('../img/brains/p4.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#two-t .focus {
+  display: block;
+  opacity: 1;
 }
 
 #two-t .bio {
@@ -1821,6 +1824,41 @@ Border
   color: #000;
 }
 
+#two-t .photo {
+  float: left;
+  width: 30%;
+  height: auto;
+  min-width: 300px;
+  min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#two-t #nick .photo {
+  background-image: url('../img/brains/p4.jpg');
+}
+
+#two-t #eric .photo {
+  background-image: url('../img/brains/p3.jpg');
+}
+
+#two-t #myles .photo {
+  background-image: url('../img/brains/p2.jpg');
+}
+
+#two-t #adam .photo {
+  background-image: url('../img/brains/p1.jpg');
+}
+
+#two-t #chris .photo {
+  background-image: url('../img/brains/p6.jpg');
+}
+
+#two-t #taylor .photo {
+  background-image: url('../img/brains/p5.jpg');
+}
+
 #two-t #border {
   width: 100%;
   height: 2px;
@@ -1828,27 +1866,27 @@ Border
   border-bottom: 1px solid #000;
 }
 
-#two-t #eric {
+#two-t .thumbs #eric {
   background-image: url('../img/brains/p3.jpg');
 }
 
-#two-t #nick {
+#two-t .thumbs #nick {
   background-image: url('../img/brains/p4.jpg');
 }
 
-#two-t #person {
+#two-t .thumbs #myles {
   background-image: url('../img/brains/p2.jpg');
 }
 
-#two-t #person2 {
+#two-t .thumbs #adam {
   background-image: url('../img/brains/p1.jpg');
 }
 
-#two-t #person3 {
+#two-t .thumbs #chris {
   background-image: url('../img/brains/p6.jpg');
 }
 
-#two-t #person4 {
+#two-t .thumbs #taylor {
   background-image: url('../img/brains/p5.jpg');
 }
 

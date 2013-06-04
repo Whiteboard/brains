@@ -101,3 +101,21 @@
 
     // let's kick this pig
     startSlider();
+
+
+
+
+/*This bit runs the bio details section in trusts.html*/
+/*Variables 'n stuff.*/
+    var focus = $(".details"),
+        triggers = $(".thumbs");
+    
+    //Event trigger
+    triggers.on("click", ".thumb", function(e){
+        // e refers to the browser event itself. Check out console.log(e) for more info.
+        var i = $(this).addClass("focus").index();
+        $(this).siblings().removeClass("focus");
+        focus.find(".detail").eq(i).addClass("focus").siblings().removeClass("focus");
+    });
+
+
