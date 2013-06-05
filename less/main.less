@@ -842,23 +842,32 @@ Border
 	/*Thumbnails*/
 
 	.thumbs {
-		#eric {
+		transition: position .07s ease-in-out;
+		.eric {
 			background-image: url('../img/brains/p3.jpg');
 		}
-		#nick {
+		.nick {
 			background-image: url('../img/brains/p4.jpg');
 		}
-		#myles {
+		.myles {
 			background-image: url('../img/brains/p2.jpg');
 		}
-		#adam {
+		.adam {
 			background-image: url('../img/brains/p1.jpg');
 		}
-		#chris {
+		.chris {
 			background-image: url('../img/brains/p6.jpg');
 		}
-		#taylor {
+		.taylor {
 			background-image: url('../img/brains/p5.jpg');
+		}
+	}
+	.thumbs:active {
+		h5 {
+			font-weight: 800;
+		}
+		.name {
+			top: 72px;
 		}
 	}
 }

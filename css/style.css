@@ -1866,28 +1866,40 @@ Border
   border-bottom: 1px solid #000;
 }
 
-#two-t .thumbs #eric {
+#two-t .thumbs {
+  transition: position 0.07s ease-in-out;
+}
+
+#two-t .thumbs .eric {
   background-image: url('../img/brains/p3.jpg');
 }
 
-#two-t .thumbs #nick {
+#two-t .thumbs .nick {
   background-image: url('../img/brains/p4.jpg');
 }
 
-#two-t .thumbs #myles {
+#two-t .thumbs .myles {
   background-image: url('../img/brains/p2.jpg');
 }
 
-#two-t .thumbs #adam {
+#two-t .thumbs .adam {
   background-image: url('../img/brains/p1.jpg');
 }
 
-#two-t .thumbs #chris {
+#two-t .thumbs .chris {
   background-image: url('../img/brains/p6.jpg');
 }
 
-#two-t .thumbs #taylor {
+#two-t .thumbs .taylor {
   background-image: url('../img/brains/p5.jpg');
+}
+
+#two-t .thumbs:active h5 {
+  font-weight: 800;
+}
+
+#two-t .thumbs:active .name {
+  top: 72px;
 }
 
 #three-t {
