@@ -761,14 +761,18 @@ Border
 		/*Details*/
 		.detail {
 			width: 100%;
+			height: 0;
+			overflow: hidden;
 			margin-top: 40px;
-			display: none;
-			opacity: 0;
-			transition: all .4s ease-in-out;
+			opacity: 0.1;
+			transition: all .7s ease-in-out;
+			margin-left: 40px;
 		}
 		.focus {
 			display: block;
+			height: auto;
 			opacity: 1;
+			margin: 0 auto;
 		}
 		.bio {
 			float: left;
