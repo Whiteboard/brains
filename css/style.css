@@ -1575,7 +1575,7 @@ Border
 }
 
 #five .inner_wrap #intensives {
-  background-image: url('../img/categories/intensives.png');
+  background-image: url('../img/categories/intensives.jpg');
 }
 
 #five .inner_wrap .category:hover {
@@ -1762,7 +1762,7 @@ Border
 
 #one-t {
   background-attachment: fixed;
-  background-image: url('../img/trusts.png');
+  background-image: url('../img/trusts.jpg');
   background-position: center;
 }
 
